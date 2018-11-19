@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nginx:
+    build: ./nginxbuild
+    ports:
+      - "8181:80"
+      - "8282:443"
+    links:
+      - "php"
+  php:
+    build: ./phpbuild
+    ports:
+      - "9000:9000"

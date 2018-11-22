@@ -8,4 +8,4 @@ services:
   php:
     image: vsharique/php:5.6-fpm
     ports:
-      - "9000:9000"
+      - "9001:9000"
